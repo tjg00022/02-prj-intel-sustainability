@@ -1,1 +1,136 @@
 /* Add your CSS here */
+.hero {
+  /* Blue background color */
+  background: #0068b5;
+  /* Add space above and below the content */
+  padding: 48px 0 40px 0;
+  /* Make text color white for contrast */
+  color: #fff;
+  /* Make header stretch full width */
+  width: 100%;
+}
+
+/* Center all content inside the header */
+.hero-content {
+  /* Set a max width so content doesn't stretch too wide */
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 16px; /* Small padding on sides for mobile */
+}
+
+/* Style the Intel logo */
+.hero-logo {
+  width: 90px; /* Set logo size */
+  margin-bottom: 24px;
+}
+
+/* Main heading style */
+.hero-title {
+  font-size: 2.5rem; /* Large text */
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 0 12px 0;
+  line-height: 1.1;
+}
+
+/* Blue underline below the heading */
+.hero-underline {
+  width: 60px;
+  height: 4px;
+  background: #00baff;
+  margin: 0 auto 24px auto;
+  border-radius: 2px;
+}
+
+/* Subheading/description style */
+.hero-desc {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin: 0;
+  color: #e6f2fb; /* Slightly lighter for readability */
+}
+
+.timeline-cards {
+  /* Use flex to lay out cards in a row, wrap to next line if needed */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* Space between cards */
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Each card box */
+.timeline-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 220px;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: left;
+  position: relative; /* Needed for absolute positioning of description */
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+  min-height: 200px; /* Make cards even height */
+}
+
+/* Make card pop a bit on hover */
+.timeline-card:hover {
+  box-shadow: 0 4px 16px rgba(0,104,181,0.18);
+}
+
+/* Hide the description by default */
+.card-desc {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0068b5;
+  color: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Show the description when hovering over the card */
+.timeline-card:hover .card-desc {
+  display: block;
+}
+
+/* Make sure the image doesn't stretch */
+.timeline-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* Style for year and title */
+.timeline-card h2 {
+  color: #0068b5;
+  font-size: 1.2rem;
+  margin: 0 0 4px 0;
+}
+
+.timeline-card h3 {
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+  font-weight: normal;
+  color: #222;
+}
+
+body > p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
